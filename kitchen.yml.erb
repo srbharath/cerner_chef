@@ -1,0 +1,28 @@
+<%
+replica_count = 5
+%>
+
+driver:
+  name: docker
+provisioner:
+  name: chef_zero
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu
+    driver_config:
+      image: ubuntu:20.04
+      platform: ubuntu
+
+suites:
+<% replica_count.times do |i| %>
+  - name: instance-<%= i + 1 %>
+    driver_config:
+      forward:
+        - "<%= 80 + i %>:80"
+    run_list:
+      - recipe[my_cookbook::default]
+    attributes:
+<% end %>
+
