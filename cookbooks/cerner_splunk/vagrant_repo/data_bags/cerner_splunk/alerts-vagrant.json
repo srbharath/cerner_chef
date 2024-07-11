@@ -1,0 +1,31 @@
+{
+  "id": "alerts-vagrant",
+  "alerts": {
+    "search.splunk.cerner.local": {
+      "bag": ":base",
+      "email": {
+        "hostname":"http://192.168.56.10:8000"
+      }
+    },
+    "s_standalone": {
+      "bag": ":base",
+      "email": {
+        "hostname":"http://192.168.56.20:8000"
+      }
+    },
+    "search_head": {
+      "bag": ":base",
+      "email": {
+      }
+    },
+    "shcluster": "search_head"
+  },
+  "base": {
+    "email": {
+      "mailserver": "smtprr.cerner.com",
+      "from": "splunk-dev@cerner.com",
+      "subject": "Vagrant Splunk Alert: $name$",
+      "inline":1
+    }
+  }
+}

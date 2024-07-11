@@ -1,0 +1,261 @@
+I, [2024-07-05T12:04:48.242078 #313267]  INFO -- indexer-node2-ubuntu-2004: -----> Converging <indexer-node2-ubuntu-2004>...
+I, [2024-07-05T12:04:48.244940 #313267]  INFO -- indexer-node2-ubuntu-2004: Preparing files for transfer
+I, [2024-07-05T12:04:48.245220 #313267]  INFO -- indexer-node2-ubuntu-2004: Preparing dna.json
+I, [2024-07-05T12:04:48.245710 #313267]  INFO -- indexer-node2-ubuntu-2004: Resolving cookbook dependencies with Berkshelf 8.0.7...
+I, [2024-07-05T12:04:51.717492 #313267]  INFO -- indexer-node2-ubuntu-2004: Removing non-cookbook files before transfer
+I, [2024-07-05T12:04:51.725741 #313267]  INFO -- indexer-node2-ubuntu-2004: Preparing data_bags
+I, [2024-07-05T12:04:51.727588 #313267]  INFO -- indexer-node2-ubuntu-2004: Preparing environments
+I, [2024-07-05T12:04:51.728371 #313267]  INFO -- indexer-node2-ubuntu-2004: Preparing validation.pem
+I, [2024-07-05T12:04:51.728808 #313267]  INFO -- indexer-node2-ubuntu-2004: Preparing client.rb
+I, [2024-07-05T12:04:51.928873 #313267]  INFO -- indexer-node2-ubuntu-2004: -----> Installing Chef install only if missing package
+I, [2024-07-05T12:04:51.932189 #313267]  INFO -- indexer-node2-ubuntu-2004: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2024-07-05T12:04:51.933189 #313267]  INFO -- indexer-node2-ubuntu-2004: Trying wget...
+I, [2024-07-05T12:04:51.971601 #313267]  INFO -- indexer-node2-ubuntu-2004: Download complete.
+I, [2024-07-05T12:04:52.034663 #313267]  INFO -- indexer-node2-ubuntu-2004: ubuntu 20.04 x86_64
+I, [2024-07-05T12:04:52.035147 #313267]  INFO -- indexer-node2-ubuntu-2004: Getting information for chef stable  for ubuntu...
+I, [2024-07-05T12:04:52.035202 #313267]  INFO -- indexer-node2-ubuntu-2004: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=20.04&m=x86_64
+I, [2024-07-05T12:04:52.035224 #313267]  INFO -- indexer-node2-ubuntu-2004:   to file /tmp/install.sh.21/metadata.txt
+I, [2024-07-05T12:04:52.038439 #313267]  INFO -- indexer-node2-ubuntu-2004: trying wget...
+I, [2024-07-05T12:04:52.071469 #313267]  INFO -- indexer-node2-ubuntu-2004: sha1	f6037852e758977da9d23d87206348522a7506a0
+I, [2024-07-05T12:04:52.071578 #313267]  INFO -- indexer-node2-ubuntu-2004: sha256	57fd4c44ab37d9e311cbdd9dceeca73dc1ebf342b6cfb4e75632f0b7fcd4336d
+I, [2024-07-05T12:04:52.071597 #313267]  INFO -- indexer-node2-ubuntu-2004: url	https://packages.chef.io/files/stable/chef/18.4.12/ubuntu/20.04/chef_18.4.12-1_amd64.deb
+I, [2024-07-05T12:04:52.071611 #313267]  INFO -- indexer-node2-ubuntu-2004: version	18.4.12
+I, [2024-07-05T12:04:52.079032 #313267]  INFO -- indexer-node2-ubuntu-2004: downloaded metadata file looks valid...
+I, [2024-07-05T12:04:52.106051 #313267]  INFO -- indexer-node2-ubuntu-2004: downloading https://packages.chef.io/files/stable/chef/18.4.12/ubuntu/20.04/chef_18.4.12-1_amd64.deb
+I, [2024-07-05T12:04:52.106164 #313267]  INFO -- indexer-node2-ubuntu-2004:   to file /tmp/install.sh.21/chef_18.4.12-1_amd64.deb
+I, [2024-07-05T12:04:52.106188 #313267]  INFO -- indexer-node2-ubuntu-2004: trying wget...
+I, [2024-07-05T12:04:52.455345 #313267]  INFO -- indexer-node2-ubuntu-2004: Comparing checksum with sha256sum...
+I, [2024-07-05T12:04:52.741053 #313267]  INFO -- indexer-node2-ubuntu-2004: 
+I, [2024-07-05T12:04:52.741160 #313267]  INFO -- indexer-node2-ubuntu-2004: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2024-07-05T12:04:52.741180 #313267]  INFO -- indexer-node2-ubuntu-2004: 
+I, [2024-07-05T12:04:52.741193 #313267]  INFO -- indexer-node2-ubuntu-2004: You are installing a package without a version pin.  If you are installing
+I, [2024-07-05T12:04:52.741205 #313267]  INFO -- indexer-node2-ubuntu-2004: on production servers via an automated process this is DANGEROUS and you will
+I, [2024-07-05T12:04:52.741218 #313267]  INFO -- indexer-node2-ubuntu-2004: be upgraded without warning on new releases, even to new major releases.
+I, [2024-07-05T12:04:52.741230 #313267]  INFO -- indexer-node2-ubuntu-2004: Letting the version float is only appropriate in test, development or
+I, [2024-07-05T12:04:52.741243 #313267]  INFO -- indexer-node2-ubuntu-2004: CI/CD environments.
+I, [2024-07-05T12:04:52.741271 #313267]  INFO -- indexer-node2-ubuntu-2004: 
+I, [2024-07-05T12:04:52.741306 #313267]  INFO -- indexer-node2-ubuntu-2004: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2024-07-05T12:04:52.741324 #313267]  INFO -- indexer-node2-ubuntu-2004: 
+I, [2024-07-05T12:04:52.741334 #313267]  INFO -- indexer-node2-ubuntu-2004: Installing chef 
+I, [2024-07-05T12:04:52.741345 #313267]  INFO -- indexer-node2-ubuntu-2004: installing with dpkg...
+I, [2024-07-05T12:04:52.814924 #313267]  INFO -- indexer-node2-ubuntu-2004: Selecting previously unselected package chef.
+I, [2024-07-05T12:04:52.869477 #313267]  INFO -- indexer-node2-ubuntu-2004: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 12309 files and directories currently installed.)
+I, [2024-07-05T12:04:52.874587 #313267]  INFO -- indexer-node2-ubuntu-2004: Preparing to unpack .../chef_18.4.12-1_amd64.deb ...
+I, [2024-07-05T12:04:52.886423 #313267]  INFO -- indexer-node2-ubuntu-2004: Unpacking chef (18.4.12-1) ...
+I, [2024-07-05T12:04:58.610221 #313267]  INFO -- indexer-node2-ubuntu-2004: Setting up chef (18.4.12-1) ...
+I, [2024-07-05T12:04:58.671026 #313267]  INFO -- indexer-node2-ubuntu-2004: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+I, [2024-07-05T12:04:58.764043 #313267]  INFO -- indexer-node2-ubuntu-2004: Transferring files to <indexer-node2-ubuntu-2004>
+I, [2024-07-05T12:05:06.558985 #313267]  INFO -- indexer-node2-ubuntu-2004: +---------------------------------------------+
+I, [2024-07-05T12:05:06.559082 #313267]  INFO -- indexer-node2-ubuntu-2004: [32m✔[0m 2 product licenses accepted.
+I, [2024-07-05T12:05:06.559112 #313267]  INFO -- indexer-node2-ubuntu-2004: +---------------------------------------------+
+I, [2024-07-05T12:05:07.063821 #313267]  INFO -- indexer-node2-ubuntu-2004: Chef Infra Client, version 18.4.12
+I, [2024-07-05T12:05:07.063933 #313267]  INFO -- indexer-node2-ubuntu-2004: Patents: https://www.chef.io/patents
+I, [2024-07-05T12:05:07.063958 #313267]  INFO -- indexer-node2-ubuntu-2004: Infra Phase starting
+I, [2024-07-05T12:05:07.444132 #313267]  INFO -- indexer-node2-ubuntu-2004: [2024-07-05T12:05:07+00:00] WARN: Plugin Network: unable to detect ipaddress
+I, [2024-07-05T12:05:08.552108 #313267]  INFO -- indexer-node2-ubuntu-2004: [2024-07-05T12:05:08+00:00] ERROR: shard_seed: Failed to get dmi property serial_number: is dmidecode installed?
+I, [2024-07-05T12:05:08.591816 #313267]  INFO -- indexer-node2-ubuntu-2004: Creating a new client identity for indexer-node2-ubuntu-2004 using the validator key.
+I, [2024-07-05T12:05:08.695545 #313267]  INFO -- indexer-node2-ubuntu-2004: Resolving cookbooks for run list: ["cerner_splunk::search_head", "cerner_splunk::indexer-cluster"]
+I, [2024-07-05T12:05:08.894754 #313267]  INFO -- indexer-node2-ubuntu-2004: Synchronizing cookbooks:
+I, [2024-07-05T12:05:09.189875 #313267]  INFO -- indexer-node2-ubuntu-2004:   - cerner_splunk (2.60.0)
+I, [2024-07-05T12:05:09.215850 #313267]  INFO -- indexer-node2-ubuntu-2004:   - ulimit (1.1.1)
+I, [2024-07-05T12:05:09.249114 #313267]  INFO -- indexer-node2-ubuntu-2004:   - line (2.9.3)
+I, [2024-07-05T12:05:09.251625 #313267]  INFO -- indexer-node2-ubuntu-2004: Installing cookbook gem dependencies:
+I, [2024-07-05T12:05:09.297895 #313267]  INFO -- indexer-node2-ubuntu-2004: Compiling cookbooks...
+I, [2024-07-05T12:05:10.286590 #313267]  INFO -- indexer-node2-ubuntu-2004: Loading Chef InSpec profile files:
+I, [2024-07-05T12:05:10.287444 #313267]  INFO -- indexer-node2-ubuntu-2004: Loading Chef InSpec input files:
+I, [2024-07-05T12:05:10.287510 #313267]  INFO -- indexer-node2-ubuntu-2004: Loading Chef InSpec waiver files:
+I, [2024-07-05T12:05:10.317426 #313267]  INFO -- indexer-node2-ubuntu-2004: [2024-07-05T12:05:10+00:00] WARN: Resource user_ulimit built into Chef Infra Client is being overridden by the resource from a cookbook. Please upgrade your cookbook or remove the cookbook from your run_list.
+I, [2024-07-05T12:05:10.365169 #313267]  INFO -- indexer-node2-ubuntu-2004: [2024-07-05T12:05:10+00:00] WARN: No cluster data bag configured, ensuring configuration for other components.
+I, [2024-07-05T12:05:10.376977 #313267]  INFO -- indexer-node2-ubuntu-2004: Converging 36 resources
+I, [2024-07-05T12:05:10.378553 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_restart_marker
+I, [2024-07-05T12:05:10.379473 #313267]  INFO -- indexer-node2-ubuntu-2004:   * file[splunk-marker] action nothing (skipped due to action :nothing)
+I, [2024-07-05T12:05:10.380016 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_install
+I, [2024-07-05T12:05:10.380064 #313267]  INFO -- indexer-node2-ubuntu-2004:   * chef_sleep[sleep-45] action nothing (skipped due to action :nothing)
+I, [2024-07-05T12:05:10.380861 #313267]  INFO -- indexer-node2-ubuntu-2004:   * service[splunk] action nothing (skipped due to action :nothing)
+I, [2024-07-05T12:05:10.381557 #313267]  INFO -- indexer-node2-ubuntu-2004:   * service[splunk-restart] action nothing (skipped due to action :nothing)
+I, [2024-07-05T12:05:10.382144 #313267]  INFO -- indexer-node2-ubuntu-2004:   * ruby_block[splunk-delayed-restart] action run
+I, [2024-07-05T12:05:10.382458 #313267]  INFO -- indexer-node2-ubuntu-2004:     - execute the ruby block splunk-delayed-restart
+I, [2024-07-05T12:05:17.669723 #313267]  INFO -- indexer-node2-ubuntu-2004:   * remote_file[/tmp/kitchen/cache/splunk-9.0.5-e9494146ae5c-linux-2.6-amd64.deb] action create
+I, [2024-07-05T12:05:19.827662 #313267]  INFO -- indexer-node2-ubuntu-2004:     - create new file /tmp/kitchen/cache/splunk-9.0.5-e9494146ae5c-linux-2.6-amd64.deb
+I, [2024-07-05T12:05:19.827762 #313267]  INFO -- indexer-node2-ubuntu-2004:     - update content in file /tmp/kitchen/cache/splunk-9.0.5-e9494146ae5c-linux-2.6-amd64.deb from none to 0ca474
+I, [2024-07-05T12:05:19.828843 #313267]  INFO -- indexer-node2-ubuntu-2004:     (file sizes exceed 10000000 bytes, diff output suppressed)
+I, [2024-07-05T12:05:19.829782 #313267]  INFO -- indexer-node2-ubuntu-2004:   * ruby_block[upgrade-splunk-stop] action run (skipped due to only_if)
+I, [2024-07-05T12:06:15.410445 #313267]  INFO -- indexer-node2-ubuntu-2004:   * dpkg_package[splunk] action install
+I, [2024-07-05T12:06:15.410570 #313267]  INFO -- indexer-node2-ubuntu-2004:     - install version 9.0.5-e9494146ae5c of package splunk
+I, [2024-07-05T12:06:18.572102 #313267]  INFO -- indexer-node2-ubuntu-2004:   * execute[splunk-first-run] action run
+I, [2024-07-05T12:06:18.572316 #313267]  INFO -- indexer-node2-ubuntu-2004:     - execute /opt/splunk/bin/splunk help commands --accept-license --answer-yes --no-prompt --seed-passwd 'changeme'
+I, [2024-07-05T12:06:19.796397 #313267]  INFO -- indexer-node2-ubuntu-2004:   * execute[set-admin-password] action run
+I, [2024-07-05T12:06:19.797860 #313267]  INFO -- indexer-node2-ubuntu-2004:     - execute /opt/splunk/bin/splunk edit user admin -password changeme
+I, [2024-07-05T12:06:19.798673 #313267]  INFO -- indexer-node2-ubuntu-2004:   * ruby_block[read splunk.secret] action run
+I, [2024-07-05T12:06:19.799622 #313267]  INFO -- indexer-node2-ubuntu-2004:     - execute the ruby block read splunk.secret
+I, [2024-07-05T12:06:19.801064 #313267]  INFO -- indexer-node2-ubuntu-2004:   * directory[/etc/splunk] action create
+I, [2024-07-05T12:06:19.804145 #313267]  INFO -- indexer-node2-ubuntu-2004:     - create new directory /etc/splunk
+I, [2024-07-05T12:06:19.805827 #313267]  INFO -- indexer-node2-ubuntu-2004:     - change mode from '' to '0700'
+I, [2024-07-05T12:06:19.807140 #313267]  INFO -- indexer-node2-ubuntu-2004:     - change owner from '' to 'splunk'
+I, [2024-07-05T12:06:19.807454 #313267]  INFO -- indexer-node2-ubuntu-2004:     - change group from '' to 'splunk'
+I, [2024-07-05T12:06:19.809212 #313267]  INFO -- indexer-node2-ubuntu-2004:   * directory[/opt/splunk/var/log/introspection] action create (up to date)
+I, [2024-07-05T12:06:19.937560 #313267]  INFO -- indexer-node2-ubuntu-2004:   * file[splunk_package] action delete
+I, [2024-07-05T12:06:19.937930 #313267]  INFO -- indexer-node2-ubuntu-2004:     - delete file /tmp/kitchen/cache/splunk-9.0.5-e9494146ae5c-linux-2.6-amd64.deb
+I, [2024-07-05T12:06:19.937974 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_user_management
+I, [2024-07-05T12:06:19.951041 #313267]  INFO -- indexer-node2-ubuntu-2004:   * linux_user[splunk] action create (up to date)
+I, [2024-07-05T12:06:19.973221 #313267]  INFO -- indexer-node2-ubuntu-2004:   * linux_user[splunk] action lock (up to date)
+I, [2024-07-05T12:06:20.070904 #313267]  INFO -- indexer-node2-ubuntu-2004:   * group[splunk_splunk] action manage
+I, [2024-07-05T12:06:20.070997 #313267]  INFO -- indexer-node2-ubuntu-2004:     - manage group splunk
+I, [2024-07-05T12:06:20.071018 #313267]  INFO -- indexer-node2-ubuntu-2004:     - add missing member(s): splunk
+I, [2024-07-05T12:06:20.071035 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_restart_marker
+I, [2024-07-05T12:06:20.072581 #313267]  INFO -- indexer-node2-ubuntu-2004:   * file[splunk-marker] action touch
+I, [2024-07-05T12:06:20.073437 #313267]  INFO -- indexer-node2-ubuntu-2004:     - create new file /tmp/kitchen/cache/.restart_splunk
+I, [2024-07-05T12:06:20.074633 #313267]  INFO -- indexer-node2-ubuntu-2004:     - update utime on file /tmp/kitchen/cache/.restart_splunk
+I, [2024-07-05T12:06:20.074981 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_user_management
+I, [2024-07-05T12:06:20.075595 #313267]  INFO -- indexer-node2-ubuntu-2004:   * group[splunk_root] action manage (up to date)
+I, [2024-07-05T12:06:20.076603 #313267]  INFO -- indexer-node2-ubuntu-2004:   * group[splunk_wheel] action manage (up to date)
+I, [2024-07-05T12:06:20.077464 #313267]  INFO -- indexer-node2-ubuntu-2004:   * group[splunk_admin] action manage (up to date)
+I, [2024-07-05T12:06:20.077501 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: ulimit::default
+I, [2024-07-05T12:06:20.104038 #313267]  INFO -- indexer-node2-ubuntu-2004:   * template[/etc/pam.d/su] action create
+I, [2024-07-05T12:06:20.104145 #313267]  INFO -- indexer-node2-ubuntu-2004:     - update content in file /etc/pam.d/su from f7cac6 to 3f3c0d
+I, [2024-07-05T12:06:20.105568 #313267]  INFO -- indexer-node2-ubuntu-2004:     --- /etc/pam.d/su	2019-07-28 21:44:43.000000000 +0000
+I, [2024-07-05T12:06:20.105624 #313267]  INFO -- indexer-node2-ubuntu-2004:     +++ /etc/pam.d/.chef-su20240705-109-95lvnc	2024-07-05 12:06:20.083990502 +0000
+I, [2024-07-05T12:06:20.105645 #313267]  INFO -- indexer-node2-ubuntu-2004:     @@ -1,6 +1,8 @@
+I, [2024-07-05T12:06:20.105662 #313267]  INFO -- indexer-node2-ubuntu-2004:      #
+I, [2024-07-05T12:06:20.105676 #313267]  INFO -- indexer-node2-ubuntu-2004:      # The PAM configuration file for the Shadow `su' service
+I, [2024-07-05T12:06:20.105695 #313267]  INFO -- indexer-node2-ubuntu-2004:      #
+I, [2024-07-05T12:06:20.105706 #313267]  INFO -- indexer-node2-ubuntu-2004:     +# This file modified by Chef to enable ulimit switching with `su`
+I, [2024-07-05T12:06:20.105716 #313267]  INFO -- indexer-node2-ubuntu-2004:     +#
+I, [2024-07-05T12:06:20.105726 #313267]  INFO -- indexer-node2-ubuntu-2004:      
+I, [2024-07-05T12:06:20.105736 #313267]  INFO -- indexer-node2-ubuntu-2004:      # This allows root to su without passwords (normal operation)
+I, [2024-07-05T12:06:20.105751 #313267]  INFO -- indexer-node2-ubuntu-2004:      auth       sufficient pam_rootok.so
+I, [2024-07-05T12:06:20.105762 #313267]  INFO -- indexer-node2-ubuntu-2004:     @@ -47,7 +49,8 @@
+I, [2024-07-05T12:06:20.105772 #313267]  INFO -- indexer-node2-ubuntu-2004:      # "nopen" stands to avoid reporting new mail when su'ing to another user
+I, [2024-07-05T12:06:20.105795 #313267]  INFO -- indexer-node2-ubuntu-2004:      session    optional   pam_mail.so nopen
+I, [2024-07-05T12:06:20.105805 #313267]  INFO -- indexer-node2-ubuntu-2004:      
+I, [2024-07-05T12:06:20.105814 #313267]  INFO -- indexer-node2-ubuntu-2004:     -# Sets up user limits according to /etc/security/limits.conf
+I, [2024-07-05T12:06:20.105830 #313267]  INFO -- indexer-node2-ubuntu-2004:     +# Sets up user limits, please uncomment and read /etc/security/limits.conf
+I, [2024-07-05T12:06:20.105842 #313267]  INFO -- indexer-node2-ubuntu-2004:     +# to enable this functionality.
+I, [2024-07-05T12:06:20.105851 #313267]  INFO -- indexer-node2-ubuntu-2004:      # (Replaces the use of /etc/limits in old login)
+I, [2024-07-05T12:06:20.105861 #313267]  INFO -- indexer-node2-ubuntu-2004:      session    required   pam_limits.so
+I, [2024-07-05T12:06:20.105870 #313267]  INFO -- indexer-node2-ubuntu-2004:      
+I, [2024-07-05T12:06:20.105879 #313267]  INFO -- indexer-node2-ubuntu-2004:     @@ -57,6 +60,5 @@
+I, [2024-07-05T12:06:20.105894 #313267]  INFO -- indexer-node2-ubuntu-2004:      @include common-auth
+I, [2024-07-05T12:06:20.105905 #313267]  INFO -- indexer-node2-ubuntu-2004:      @include common-account
+I, [2024-07-05T12:06:20.105914 #313267]  INFO -- indexer-node2-ubuntu-2004:      @include common-session
+I, [2024-07-05T12:06:20.105924 #313267]  INFO -- indexer-node2-ubuntu-2004:     -
+I, [2024-07-05T12:06:20.107111 #313267]  INFO -- indexer-node2-ubuntu-2004:      
+I, [2024-07-05T12:06:20.110496 #313267]  INFO -- indexer-node2-ubuntu-2004:   * cookbook_file[/etc/pam.d/sudo] action create
+I, [2024-07-05T12:06:20.110872 #313267]  INFO -- indexer-node2-ubuntu-2004:     - update content in file /etc/pam.d/sudo from f9d37f to ae6ee3
+I, [2024-07-05T12:06:20.111200 #313267]  INFO -- indexer-node2-ubuntu-2004:     --- /etc/pam.d/sudo	2023-04-04 11:56:28.000000000 +0000
+I, [2024-07-05T12:06:20.111229 #313267]  INFO -- indexer-node2-ubuntu-2004:     +++ /etc/pam.d/.chef-sudo20240705-109-cxzhqa	2024-07-05 12:06:20.106990423 +0000
+I, [2024-07-05T12:06:20.111242 #313267]  INFO -- indexer-node2-ubuntu-2004:     @@ -1,8 +1,10 @@
+I, [2024-07-05T12:06:20.111670 #313267]  INFO -- indexer-node2-ubuntu-2004:      #%PAM-1.0
+I, [2024-07-05T12:06:20.111823 #313267]  INFO -- indexer-node2-ubuntu-2004:      
+I, [2024-07-05T12:06:20.111951 #313267]  INFO -- indexer-node2-ubuntu-2004:     -session    required   pam_env.so readenv=1 user_readenv=0
+I, [2024-07-05T12:06:20.112108 #313267]  INFO -- indexer-node2-ubuntu-2004:     -session    required   pam_env.so readenv=1 envfile=/etc/default/locale user_readenv=0
+I, [2024-07-05T12:06:20.112447 #313267]  INFO -- indexer-node2-ubuntu-2004:     +auth       required   pam_env.so readenv=1 user_readenv=0
+I, [2024-07-05T12:06:20.112580 #313267]  INFO -- indexer-node2-ubuntu-2004:     +auth       required   pam_env.so readenv=1 envfile=/etc/default/locale user_readenv=0
+I, [2024-07-05T12:06:20.112730 #313267]  INFO -- indexer-node2-ubuntu-2004:     +session    required   pam_limits.so
+I, [2024-07-05T12:06:20.112872 #313267]  INFO -- indexer-node2-ubuntu-2004:      @include common-auth
+I, [2024-07-05T12:06:20.113001 #313267]  INFO -- indexer-node2-ubuntu-2004:      @include common-account
+I, [2024-07-05T12:06:20.113179 #313267]  INFO -- indexer-node2-ubuntu-2004:      @include common-session-noninteractive
+I, [2024-07-05T12:06:20.113567 #313267]  INFO -- indexer-node2-ubuntu-2004:     +
+I, [2024-07-05T12:06:20.113880 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_user_management
+I, [2024-07-05T12:06:20.114124 #313267]  INFO -- indexer-node2-ubuntu-2004:   * user_ulimit[splunk] action create
+I, [2024-07-05T12:06:20.118912 #313267]  INFO -- indexer-node2-ubuntu-2004:     * template[/etc/security/limits.d/splunk_limits.conf] action create
+I, [2024-07-05T12:06:20.119892 #313267]  INFO -- indexer-node2-ubuntu-2004:       - create new file /etc/security/limits.d/splunk_limits.conf
+I, [2024-07-05T12:06:20.120747 #313267]  INFO -- indexer-node2-ubuntu-2004:       - update content in file /etc/security/limits.d/splunk_limits.conf from none to 5dce6c
+I, [2024-07-05T12:06:20.121334 #313267]  INFO -- indexer-node2-ubuntu-2004:       --- /etc/security/limits.d/splunk_limits.conf	2024-07-05 12:06:20.116990388 +0000
+I, [2024-07-05T12:06:20.121384 #313267]  INFO -- indexer-node2-ubuntu-2004:       +++ /etc/security/limits.d/.chef-splunk_limits20240705-109-u68fpm.conf	2024-07-05 12:06:20.116990388 +0000
+I, [2024-07-05T12:06:20.121406 #313267]  INFO -- indexer-node2-ubuntu-2004:       @@ -1,10 +1,20 @@
+I, [2024-07-05T12:06:20.121925 #313267]  INFO -- indexer-node2-ubuntu-2004:       +# Limits settings for splunk
+I, [2024-07-05T12:06:20.122427 #313267]  INFO -- indexer-node2-ubuntu-2004:       +splunk - nofile 8192
+I, [2024-07-05T12:06:20.122928 #313267]  INFO -- indexer-node2-ubuntu-2004:       +
+I, [2024-07-05T12:06:20.123317 #313267]  INFO -- indexer-node2-ubuntu-2004:       +
+I, [2024-07-05T12:06:20.123737 #313267]  INFO -- indexer-node2-ubuntu-2004:       +
+I, [2024-07-05T12:06:20.124161 #313267]  INFO -- indexer-node2-ubuntu-2004:       +
+I, [2024-07-05T12:06:20.124695 #313267]  INFO -- indexer-node2-ubuntu-2004:       +
+I, [2024-07-05T12:06:20.124889 #313267]  INFO -- indexer-node2-ubuntu-2004:       +
+I, [2024-07-05T12:06:20.124926 #313267]  INFO -- indexer-node2-ubuntu-2004:       +
+I, [2024-07-05T12:06:20.125499 #313267]  INFO -- indexer-node2-ubuntu-2004:       +
+I, [2024-07-05T12:06:20.125789 #313267]  INFO -- indexer-node2-ubuntu-2004:       - change mode from '' to '0644'
+I, [2024-07-05T12:06:20.126064 #313267]  INFO -- indexer-node2-ubuntu-2004:   
+I, [2024-07-05T12:06:20.126104 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_install
+I, [2024-07-05T12:06:20.126414 #313267]  INFO -- indexer-node2-ubuntu-2004:   * file[/opt/splunk/etc/.ui_login] action touch
+I, [2024-07-05T12:06:20.126786 #313267]  INFO -- indexer-node2-ubuntu-2004:     - create new file /opt/splunk/etc/.ui_login
+I, [2024-07-05T12:06:20.126828 #313267]  INFO -- indexer-node2-ubuntu-2004:     - update utime on file /opt/splunk/etc/.ui_login
+I, [2024-07-05T12:06:20.127279 #313267]  INFO -- indexer-node2-ubuntu-2004:   * ruby_block[set-optimistic-about-file-locking] action run
+I, [2024-07-05T12:06:20.127578 #313267]  INFO -- indexer-node2-ubuntu-2004:     - execute the ruby block set-optimistic-about-file-locking
+I, [2024-07-05T12:06:20.127630 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_configure_ui
+I, [2024-07-05T12:06:20.128810 #313267]  INFO -- indexer-node2-ubuntu-2004:   * splunk_template[system/ui-prefs.conf] action create
+I, [2024-07-05T12:06:20.129384 #313267]  INFO -- indexer-node2-ubuntu-2004:     - create new file /opt/splunk/etc/system/local/ui-prefs.conf
+I, [2024-07-05T12:06:20.129678 #313267]  INFO -- indexer-node2-ubuntu-2004:     - update content in file /opt/splunk/etc/system/local/ui-prefs.conf from none to 8ba2df
+I, [2024-07-05T12:06:20.129719 #313267]  INFO -- indexer-node2-ubuntu-2004:     --- /opt/splunk/etc/system/local/ui-prefs.conf	2024-07-05 12:06:20.125990358 +0000
+I, [2024-07-05T12:06:20.130166 #313267]  INFO -- indexer-node2-ubuntu-2004:     +++ /opt/splunk/etc/system/local/.chef-ui-prefs20240705-109-kk34ym.conf	2024-07-05 12:06:20.125990358 +0000
+I, [2024-07-05T12:06:20.130208 #313267]  INFO -- indexer-node2-ubuntu-2004:     @@ -1,8 +1,16 @@
+I, [2024-07-05T12:06:20.130229 #313267]  INFO -- indexer-node2-ubuntu-2004:     +# This file is auto-generated and managed by the cerner_splunk Chef cookbook.
+I, [2024-07-05T12:06:20.130248 #313267]  INFO -- indexer-node2-ubuntu-2004:     +# Manual changes to this file may be lost or modified during future Chef executions.
+I, [2024-07-05T12:06:20.131003 #313267]  INFO -- indexer-node2-ubuntu-2004:     +
+I, [2024-07-05T12:06:20.131047 #313267]  INFO -- indexer-node2-ubuntu-2004:     +dispatch.earliest_time = @d
+I, [2024-07-05T12:06:20.131507 #313267]  INFO -- indexer-node2-ubuntu-2004:     +dispatch.latest_time = now
+I, [2024-07-05T12:06:20.131770 #313267]  INFO -- indexer-node2-ubuntu-2004:     +display.prefs.enableMetaData = 0
+I, [2024-07-05T12:06:20.131806 #313267]  INFO -- indexer-node2-ubuntu-2004:     +display.prefs.showDataSummary = 0
+I, [2024-07-05T12:06:20.132326 #313267]  INFO -- indexer-node2-ubuntu-2004:     +
+I, [2024-07-05T12:06:20.132493 #313267]  INFO -- indexer-node2-ubuntu-2004:     - change mode from '' to '0600'
+I, [2024-07-05T12:06:20.132761 #313267]  INFO -- indexer-node2-ubuntu-2004:     - change owner from '' to 'splunk'
+I, [2024-07-05T12:06:20.133036 #313267]  INFO -- indexer-node2-ubuntu-2004:     - change group from '' to 'splunk'
+I, [2024-07-05T12:06:20.133249 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_restart_marker
+I, [2024-07-05T12:06:20.134101 #313267]  INFO -- indexer-node2-ubuntu-2004:   * file[splunk-marker] action touch
+I, [2024-07-05T12:06:20.134480 #313267]  INFO -- indexer-node2-ubuntu-2004:     - update utime on file /tmp/kitchen/cache/.restart_splunk
+I, [2024-07-05T12:06:20.134878 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_start
+I, [2024-07-05T12:06:20.177671 #313267]  INFO -- indexer-node2-ubuntu-2004:   * execute[/opt/splunk/bin/splunk enable boot-start -user splunk -group splunk -systemd-managed 0 -systemd-unit-file-name splunk] action run
+I, [2024-07-05T12:06:20.178657 #313267]  INFO -- indexer-node2-ubuntu-2004:     - execute /opt/splunk/bin/splunk enable boot-start -user splunk -group splunk -systemd-managed 0 -systemd-unit-file-name splunk
+I, [2024-07-05T12:06:20.179519 #313267]  INFO -- indexer-node2-ubuntu-2004:   * ruby_block[update-initd-file] action run
+I, [2024-07-05T12:06:20.180528 #313267]  INFO -- indexer-node2-ubuntu-2004:     - execute the ruby block update-initd-file
+I, [2024-07-05T12:06:20.181063 #313267]  INFO -- indexer-node2-ubuntu-2004:   * ruby_block[restart-splunk-for-initd-ulimit] action run
+I, [2024-07-05T12:06:20.181359 #313267]  INFO -- indexer-node2-ubuntu-2004:     - execute the ruby block restart-splunk-for-initd-ulimit
+I, [2024-07-05T12:06:20.181783 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_restart_marker
+I, [2024-07-05T12:06:20.183622 #313267]  INFO -- indexer-node2-ubuntu-2004:   * file[splunk-marker] action touch
+I, [2024-07-05T12:06:20.184016 #313267]  INFO -- indexer-node2-ubuntu-2004:     - update utime on file /tmp/kitchen/cache/.restart_splunk
+I, [2024-07-05T12:06:20.184410 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_start
+I, [2024-07-05T12:06:20.184832 #313267]  INFO -- indexer-node2-ubuntu-2004:   * execute[reload-systemctl] action nothing (skipped due to action :nothing)
+I, [2024-07-05T12:06:20.185435 #313267]  INFO -- indexer-node2-ubuntu-2004:   * filter_lines[update-systemd-file] action edit (skipped due to only_if)
+I, [2024-07-05T12:06:20.185768 #313267]  INFO -- indexer-node2-ubuntu-2004:   * ruby_block[start-splunk] action run
+I, [2024-07-05T12:06:20.185990 #313267]  INFO -- indexer-node2-ubuntu-2004:     - execute the ruby block start-splunk
+I, [2024-07-05T12:06:20.186182 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_install
+I, [2024-07-05T12:06:51.619510 #313267]  INFO -- indexer-node2-ubuntu-2004:   * service[splunk] action start
+I, [2024-07-05T12:06:51.619620 #313267]  INFO -- indexer-node2-ubuntu-2004:     - start service service[splunk]
+I, [2024-07-05T12:06:51.626910 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_restart_marker
+I, [2024-07-05T12:06:51.662136 #313267]  INFO -- indexer-node2-ubuntu-2004:   * file[splunk-marker] action delete
+I, [2024-07-05T12:06:51.673824 #313267]  INFO -- indexer-node2-ubuntu-2004:     - delete file /tmp/kitchen/cache/.restart_splunk
+I, [2024-07-05T12:06:51.681229 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_install
+I, [2024-07-05T12:06:51.690886 #313267]  INFO -- indexer-node2-ubuntu-2004:   * chef_sleep[sleep-45] action sleep (skipped due to only_if)
+I, [2024-07-05T12:06:51.706715 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_start
+I, [2024-07-05T12:06:51.746225 #313267]  INFO -- indexer-node2-ubuntu-2004:   * file[/opt/splunk/var/run/splunk/splunkd.pid] action create (up to date)
+I, [2024-07-05T12:06:51.747059 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_generate_password
+I, [2024-07-05T12:06:51.750860 #313267]  INFO -- indexer-node2-ubuntu-2004:   * ruby_block[update admin password in run_state] action nothing (skipped due to action :nothing)
+I, [2024-07-05T12:06:53.533178 #313267]  INFO -- indexer-node2-ubuntu-2004:   * execute[change-admin-password] action run
+I, [2024-07-05T12:06:53.533271 #313267]  INFO -- indexer-node2-ubuntu-2004:     - execute /opt/splunk/bin/splunk edit user admin -password ed4c31f258a58d9b8e39784f4fbcffc2009be0b56677e49f3d1ecdbcdba817a94d996616 -roles admin -auth admin:changeme
+I, [2024-07-05T12:06:53.534678 #313267]  INFO -- indexer-node2-ubuntu-2004:   * ruby_block[update admin password in run_state] action run
+I, [2024-07-05T12:06:53.534762 #313267]  INFO -- indexer-node2-ubuntu-2004:     - execute the ruby block update admin password in run_state
+I, [2024-07-05T12:06:53.540026 #313267]  INFO -- indexer-node2-ubuntu-2004:   * file[/etc/splunk/password] action create
+I, [2024-07-05T12:06:53.541229 #313267]  INFO -- indexer-node2-ubuntu-2004:     - create new file /etc/splunk/password
+I, [2024-07-05T12:06:53.541415 #313267]  INFO -- indexer-node2-ubuntu-2004:     - update content in file /etc/splunk/password from none to dcf313
+I, [2024-07-05T12:06:53.541503 #313267]  INFO -- indexer-node2-ubuntu-2004:     --- /etc/splunk/password	2024-07-05 12:06:53.537897242 +0000
+I, [2024-07-05T12:06:53.541520 #313267]  INFO -- indexer-node2-ubuntu-2004:     +++ /etc/splunk/.chef-password20240705-109-et230j	2024-07-05 12:06:53.536897237 +0000
+I, [2024-07-05T12:06:53.541533 #313267]  INFO -- indexer-node2-ubuntu-2004:     @@ -1 +1,2 @@
+I, [2024-07-05T12:06:53.542867 #313267]  INFO -- indexer-node2-ubuntu-2004:     +ed4c31f258a58d9b8e39784f4fbcffc2009be0b56677e49f3d1ecdbcdba817a94d996616
+I, [2024-07-05T12:06:53.543487 #313267]  INFO -- indexer-node2-ubuntu-2004:     - change mode from '' to '0600'
+I, [2024-07-05T12:06:53.544057 #313267]  INFO -- indexer-node2-ubuntu-2004:     - change owner from '' to 'root'
+I, [2024-07-05T12:06:53.544394 #313267]  INFO -- indexer-node2-ubuntu-2004:     - change group from '' to 'root'
+I, [2024-07-05T12:06:53.544708 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::indexer-cluster
+I, [2024-07-05T12:07:54.300081 #313267]  INFO -- indexer-node2-ubuntu-2004:   * execute[restart_splunk] action run
+I, [2024-07-05T12:07:54.300177 #313267]  INFO -- indexer-node2-ubuntu-2004:     - execute 
+I, [2024-07-05T12:07:54.300221 #313267]  INFO -- indexer-node2-ubuntu-2004:    /opt/splunk/bin/splunk add user admin2 -role admin -password test@admin
+I, [2024-07-05T12:07:54.300240 #313267]  INFO -- indexer-node2-ubuntu-2004:    /opt/splunk/bin/splunk restart
+I, [2024-07-05T12:07:54.300253 #313267]  INFO -- indexer-node2-ubuntu-2004:   
+I, [2024-07-05T12:07:54.300481 #313267]  INFO -- indexer-node2-ubuntu-2004: Recipe: cerner_splunk::_install
+I, [2024-07-05T12:07:54.303961 #313267]  INFO -- indexer-node2-ubuntu-2004:   * service[splunk-restart] action restart (skipped due to only_if)
+I, [2024-07-05T12:07:54.481133 #313267]  INFO -- indexer-node2-ubuntu-2004: 
+I, [2024-07-05T12:07:54.482733 #313267]  INFO -- indexer-node2-ubuntu-2004: Running handlers:
+I, [2024-07-05T12:07:54.483834 #313267]  INFO -- indexer-node2-ubuntu-2004: Running handlers complete
+I, [2024-07-05T12:07:54.484449 #313267]  INFO -- indexer-node2-ubuntu-2004: Infra Phase complete, 29/46 resources updated in 02 minutes 47 seconds
+I, [2024-07-05T12:07:54.484977 #313267]  INFO -- indexer-node2-ubuntu-2004: [2024-07-05T12:07:54+00:00] WARN: This release of Chef Infra Client became end of life (EOL) on May 1st 2024. Please update to a supported release to receive new features, bug fixes, and security updates.
+I, [2024-07-05T12:07:54.548225 #313267]  INFO -- indexer-node2-ubuntu-2004: Downloading files from <indexer-node2-ubuntu-2004>
+I, [2024-07-05T12:07:54.560834 #313267]  INFO -- indexer-node2-ubuntu-2004: Finished converging <indexer-node2-ubuntu-2004> (3m6.32s).

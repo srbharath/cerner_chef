@@ -1,0 +1,29 @@
+I, [2024-06-14T12:45:08.998535 #26652]  INFO -- Kitchen: -----> Starting Test Kitchen (v3.5.0)
+E, [2024-06-14T12:45:08.999112 #26652] ERROR -- Kitchen: ------Exception-------
+E, [2024-06-14T12:45:08.999161 #26652] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2024-06-14T12:45:08.999177 #26652] ERROR -- Kitchen: Message: Kitchen YAML file /root/cookbooks/kitchen.yml does not exist.
+E, [2024-06-14T12:45:08.999192 #26652] ERROR -- Kitchen: ----------------------
+E, [2024-06-14T12:45:08.999205 #26652] ERROR -- Kitchen: ------Backtrace-------
+E, [2024-06-14T12:45:08.999219 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/loader/yaml.rb:65:in `read'
+E, [2024-06-14T12:45:08.999234 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/config.rb:153:in `data'
+E, [2024-06-14T12:45:08.999249 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/config.rb:131:in `suites'
+E, [2024-06-14T12:45:08.999264 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/config.rb:183:in `filter_instances'
+E, [2024-06-14T12:45:08.999279 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/config.rb:142:in `build_instances'
+E, [2024-06-14T12:45:08.999324 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/config.rb:116:in `instances'
+E, [2024-06-14T12:45:08.999340 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:109:in `filtered_instances'
+E, [2024-06-14T12:45:08.999355 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:139:in `parse_subcommand'
+E, [2024-06-14T12:45:08.999368 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/command/action.rb:34:in `block in call'
+E, [2024-06-14T12:45:08.999429 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2024-06-14T12:45:08.999444 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/command/action.rb:33:in `call'
+E, [2024-06-14T12:45:08.999459 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/cli.rb:52:in `perform'
+E, [2024-06-14T12:45:08.999473 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/cli.rb:198:in `block (2 levels) in <class:CLI>'
+E, [2024-06-14T12:45:08.999486 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/thor-1.2.2/lib/thor/command.rb:27:in `run'
+E, [2024-06-14T12:45:08.999500 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/thor-1.2.2/lib/thor/invocation.rb:127:in `invoke_command'
+E, [2024-06-14T12:45:08.999515 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/thor-1.2.2/lib/thor.rb:392:in `dispatch'
+E, [2024-06-14T12:45:08.999530 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/thor-1.2.2/lib/thor/base.rb:485:in `start'
+E, [2024-06-14T12:45:08.999544 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/bin/kitchen:11:in `block in <top (required)>'
+E, [2024-06-14T12:45:08.999559 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/errors.rb:183:in `with_friendly_errors'
+E, [2024-06-14T12:45:08.999574 #26652] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/bin/kitchen:11:in `<top (required)>'
+E, [2024-06-14T12:45:08.999590 #26652] ERROR -- Kitchen: /usr/bin/kitchen:426:in `load'
+E, [2024-06-14T12:45:08.999604 #26652] ERROR -- Kitchen: /usr/bin/kitchen:426:in `<main>'
+E, [2024-06-14T12:45:08.999635 #26652] ERROR -- Kitchen: ----End Backtrace-----

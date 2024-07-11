@@ -1,0 +1,4 @@
+{ "id": "splunk",
+ "admin_username": "admin1",
+ "admin_password": "test@123" 
+}

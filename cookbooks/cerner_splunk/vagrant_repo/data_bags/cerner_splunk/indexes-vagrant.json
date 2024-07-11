@@ -1,0 +1,38 @@
+{
+  "id": "indexes-vagrant",
+  "config": {
+    "default": {
+      "maxTotalDataSizeMB": 81920,
+      "frozenTimePeriodInSecs": 15778800
+    },
+    "volume:foo": {
+      "path": "/opt/splunk/data/foo_indexes"
+    },
+    "volume:bar": {
+      "path": "/opt/splunk/data/bar_indexes"
+    },
+    "_audit": { "maxTotalDataSizeMB": 500000 },
+    "_internal": {
+      "maxTotalDataSizeMB": 500000,
+      "frozenTimePeriodInSecs": 7776000
+    },
+    "history": { "disabled": true },
+    "main": {
+      "isReadOnly": true,
+      "maxDataSize": "auto",
+      "maxMemMB": 1
+    },
+    "opsinfra" : { "_volume": "foo" },
+    "pop_health" : { "_volume": "bar" , "_maxDailyDataSizeMB": 50 },
+    "bobs_index_emporium": {},
+    "calculated_max_total": { "_maxDailyDataSizeMB": 50 },
+    "summary": { "maxTotalDataSizeMB": 500000 }
+  },
+  "flags": {
+    "_audit": { "noGeneratePaths": true },
+    "_internal": { "noGeneratePaths": true },
+    "main": { "noGeneratePaths": true, "noRepFactor": true },
+    "history": { "noGeneratePaths": true, "noRepFactor": true },
+    "summary": { "noGeneratePaths": true }
+  }
+}

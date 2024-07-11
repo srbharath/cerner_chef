@@ -1,0 +1,72 @@
+I, [2024-06-27T05:24:09.217521 #723456]  INFO -- node-2-ubuntu-2004: -----> Creating <node-2-ubuntu-2004>...
+E, [2024-06-27T05:24:09.481713 #723456] ERROR -- node-2-ubuntu-2004: Create failed on instance <node-2-ubuntu-2004>.
+E, [2024-06-27T05:24:09.481974 #723456] ERROR -- node-2-ubuntu-2004: ------Exception-------
+E, [2024-06-27T05:24:09.482001 #723456] ERROR -- node-2-ubuntu-2004: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2024-06-27T05:24:09.482023 #723456] ERROR -- node-2-ubuntu-2004: Message: Expected process to exit with [0], but received '125'
+---- Begin output of docker -H unix:///var/run/docker.sock run -d -p 22 -p 8001:8000 -p 8092:8089 --name node2ubuntu2004-root-ubuntus2vcpu4gbsfo301-5dg8dl81 --privileged db7ed7ee7727 /usr/sbin/sshd -D -o UseDNS=no -o UsePAM=no -o PasswordAuthentication=yes -o UsePrivilegeSeparation=no -o PidFile=/tmp/sshd.pid ----
+STDOUT: 49009bf88341a57bfd04b60f1babd5217564483154a701bff44c1fb97df65a82
+STDERR: docker: Error response from daemon: driver failed programming external connectivity on endpoint node2ubuntu2004-root-ubuntus2vcpu4gbsfo301-5dg8dl81 (8a06dc991a4a44bfa0d6595f0bbdb95ee0402b248a5c886f509456335c1a19ac): Bind for 0.0.0.0:8092 failed: port is already allocated.
+---- End output of docker -H unix:///var/run/docker.sock run -d -p 22 -p 8001:8000 -p 8092:8089 --name node2ubuntu2004-root-ubuntus2vcpu4gbsfo301-5dg8dl81 --privileged db7ed7ee7727 /usr/sbin/sshd -D -o UseDNS=no -o UsePAM=no -o PasswordAuthentication=yes -o UsePrivilegeSeparation=no -o PidFile=/tmp/sshd.pid ----
+Ran docker -H unix:///var/run/docker.sock run -d -p 22 -p 8001:8000 -p 8092:8089 --name node2ubuntu2004-root-ubuntus2vcpu4gbsfo301-5dg8dl81 --privileged db7ed7ee7727 /usr/sbin/sshd -D -o UseDNS=no -o UsePAM=no -o PasswordAuthentication=yes -o UsePrivilegeSeparation=no -o PidFile=/tmp/sshd.pid returned 125
+E, [2024-06-27T05:24:09.482048 #723456] ERROR -- node-2-ubuntu-2004: ----------------------
+E, [2024-06-27T05:24:09.482062 #723456] ERROR -- node-2-ubuntu-2004: ------Backtrace-------
+E, [2024-06-27T05:24:09.482076 #723456] ERROR -- node-2-ubuntu-2004: /root/.chef/gem/ruby/3.1.0/gems/kitchen-docker-3.0.0/lib/kitchen/docker/helpers/cli_helper.rb:57:in `rescue in run_command'
+E, [2024-06-27T05:24:09.482109 #723456] ERROR -- node-2-ubuntu-2004: /root/.chef/gem/ruby/3.1.0/gems/kitchen-docker-3.0.0/lib/kitchen/docker/helpers/cli_helper.rb:44:in `run_command'
+E, [2024-06-27T05:24:09.482125 #723456] ERROR -- node-2-ubuntu-2004: /root/.chef/gem/ruby/3.1.0/gems/kitchen-docker-3.0.0/lib/kitchen/docker/helpers/cli_helper.rb:38:in `docker_command'
+E, [2024-06-27T05:24:09.482139 #723456] ERROR -- node-2-ubuntu-2004: /root/.chef/gem/ruby/3.1.0/gems/kitchen-docker-3.0.0/lib/kitchen/docker/helpers/container_helper.rb:135:in `run_container'
+E, [2024-06-27T05:24:09.482153 #723456] ERROR -- node-2-ubuntu-2004: /root/.chef/gem/ruby/3.1.0/gems/kitchen-docker-3.0.0/lib/kitchen/docker/container/linux.rb:42:in `create'
+E, [2024-06-27T05:24:09.482167 #723456] ERROR -- node-2-ubuntu-2004: /root/.chef/gem/ruby/3.1.0/gems/kitchen-docker-3.0.0/lib/kitchen/driver/docker.rb:125:in `create'
+E, [2024-06-27T05:24:09.482194 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2024-06-27T05:24:09.482210 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2024-06-27T05:24:09.482226 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2024-06-27T05:24:09.482241 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2024-06-27T05:24:09.482254 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2024-06-27T05:24:09.482264 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:523:in `action'
+E, [2024-06-27T05:24:09.482324 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2024-06-27T05:24:09.482345 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2024-06-27T05:24:09.482358 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2024-06-27T05:24:09.482387 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2024-06-27T05:24:09.482397 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2024-06-27T05:24:09.482409 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:390:in `each'
+E, [2024-06-27T05:24:09.482421 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2024-06-27T05:24:09.482434 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:139:in `converge'
+E, [2024-06-27T05:24:09.482448 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2024-06-27T05:24:09.482461 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2024-06-27T05:24:09.482521 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2024-06-27T05:24:09.482538 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2024-06-27T05:24:09.482559 #723456] ERROR -- node-2-ubuntu-2004: ----End Backtrace-----
+E, [2024-06-27T05:24:09.482572 #723456] ERROR -- node-2-ubuntu-2004: ---Nested Exception---
+E, [2024-06-27T05:24:09.482584 #723456] ERROR -- node-2-ubuntu-2004: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2024-06-27T05:24:09.482597 #723456] ERROR -- node-2-ubuntu-2004: Message: Expected process to exit with [0], but received '125'
+---- Begin output of docker -H unix:///var/run/docker.sock run -d -p 22 -p 8001:8000 -p 8092:8089 --name node2ubuntu2004-root-ubuntus2vcpu4gbsfo301-5dg8dl81 --privileged db7ed7ee7727 /usr/sbin/sshd -D -o UseDNS=no -o UsePAM=no -o PasswordAuthentication=yes -o UsePrivilegeSeparation=no -o PidFile=/tmp/sshd.pid ----
+STDOUT: 49009bf88341a57bfd04b60f1babd5217564483154a701bff44c1fb97df65a82
+STDERR: docker: Error response from daemon: driver failed programming external connectivity on endpoint node2ubuntu2004-root-ubuntus2vcpu4gbsfo301-5dg8dl81 (8a06dc991a4a44bfa0d6595f0bbdb95ee0402b248a5c886f509456335c1a19ac): Bind for 0.0.0.0:8092 failed: port is already allocated.
+---- End output of docker -H unix:///var/run/docker.sock run -d -p 22 -p 8001:8000 -p 8092:8089 --name node2ubuntu2004-root-ubuntus2vcpu4gbsfo301-5dg8dl81 --privileged db7ed7ee7727 /usr/sbin/sshd -D -o UseDNS=no -o UsePAM=no -o PasswordAuthentication=yes -o UsePrivilegeSeparation=no -o PidFile=/tmp/sshd.pid ----
+Ran docker -H unix:///var/run/docker.sock run -d -p 22 -p 8001:8000 -p 8092:8089 --name node2ubuntu2004-root-ubuntus2vcpu4gbsfo301-5dg8dl81 --privileged db7ed7ee7727 /usr/sbin/sshd -D -o UseDNS=no -o UsePAM=no -o PasswordAuthentication=yes -o UsePrivilegeSeparation=no -o PidFile=/tmp/sshd.pid returned 125
+E, [2024-06-27T05:24:09.482617 #723456] ERROR -- node-2-ubuntu-2004: ----------------------
+E, [2024-06-27T05:24:09.482635 #723456] ERROR -- node-2-ubuntu-2004: ------Backtrace-------
+E, [2024-06-27T05:24:09.482648 #723456] ERROR -- node-2-ubuntu-2004: /root/.chef/gem/ruby/3.1.0/gems/kitchen-docker-3.0.0/lib/kitchen/docker/helpers/cli_helper.rb:57:in `rescue in run_command'
+E, [2024-06-27T05:24:09.482673 #723456] ERROR -- node-2-ubuntu-2004: /root/.chef/gem/ruby/3.1.0/gems/kitchen-docker-3.0.0/lib/kitchen/docker/helpers/cli_helper.rb:44:in `run_command'
+E, [2024-06-27T05:24:09.482686 #723456] ERROR -- node-2-ubuntu-2004: /root/.chef/gem/ruby/3.1.0/gems/kitchen-docker-3.0.0/lib/kitchen/docker/helpers/cli_helper.rb:38:in `docker_command'
+E, [2024-06-27T05:24:09.482702 #723456] ERROR -- node-2-ubuntu-2004: /root/.chef/gem/ruby/3.1.0/gems/kitchen-docker-3.0.0/lib/kitchen/docker/helpers/container_helper.rb:135:in `run_container'
+E, [2024-06-27T05:24:09.482714 #723456] ERROR -- node-2-ubuntu-2004: /root/.chef/gem/ruby/3.1.0/gems/kitchen-docker-3.0.0/lib/kitchen/docker/container/linux.rb:42:in `create'
+E, [2024-06-27T05:24:09.482728 #723456] ERROR -- node-2-ubuntu-2004: /root/.chef/gem/ruby/3.1.0/gems/kitchen-docker-3.0.0/lib/kitchen/driver/docker.rb:125:in `create'
+E, [2024-06-27T05:24:09.482752 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2024-06-27T05:24:09.482765 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2024-06-27T05:24:09.482778 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2024-06-27T05:24:09.482791 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2024-06-27T05:24:09.482815 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/3.1.0/benchmark.rb:296:in `measure'
+E, [2024-06-27T05:24:09.482830 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:523:in `action'
+E, [2024-06-27T05:24:09.482843 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2024-06-27T05:24:09.482856 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2024-06-27T05:24:09.482868 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2024-06-27T05:24:09.482881 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2024-06-27T05:24:09.482894 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2024-06-27T05:24:09.482908 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:390:in `each'
+E, [2024-06-27T05:24:09.482920 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2024-06-27T05:24:09.482933 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/instance.rb:139:in `converge'
+E, [2024-06-27T05:24:09.482958 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2024-06-27T05:24:09.482984 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2024-06-27T05:24:09.483000 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/test-kitchen-3.5.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2024-06-27T05:24:09.483013 #723456] ERROR -- node-2-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.1.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2024-06-27T05:24:09.483026 #723456] ERROR -- node-2-ubuntu-2004: ----End Backtrace-----

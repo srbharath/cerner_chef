@@ -1,0 +1,22 @@
+{
+  "id": "cluster-corporate",
+  "splunk_servers": [
+    {
+      "hostname": "splunk-server-01",
+      "ipaddress": "192.168.1.1",
+      "port": 8089
+    },
+    {
+      "hostname": "splunk-server-02",
+      "ipaddress": "192.168.1.2",
+      "port": 8089
+    }
+  ],
+  "admin_username": "admin",
+  "admin_password": "secure_password",
+  "indexes": [
+    "awesome_team",
+    "another_index"
+  ]
+}
+

@@ -1,0 +1,27 @@
+.vagrant
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.project
+.idea/
+*.bak
+*.DS_Store
+*.un~
+.ruby-version
+
+# Generated from metadata.rb
+metadata.json
+
+# Generated from berks
+Berksfile.lock
+
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+
+# Vagrant-Repo
+vagrant_repo/Berksfile.lock
+vagrant_repo/.chef/syntaxcache

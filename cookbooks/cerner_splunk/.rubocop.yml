@@ -1,0 +1,59 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'Vagrantfile'
+    - 'Gemfile'
+    - 'Berksfile'
+    - 'vendor/**/*'
+    - '.git/**/*'
+
+Layout/LineLength:
+  Enabled: false
+
+Lint/EmptyWhen:
+  Enabled: false
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Max: 8
+
+Metrics/MethodLength:
+  Max: 40
+
+Metrics/PerceivedComplexity:
+  Max: 9
+
+Naming/VariableNumber:
+  Enabled: false
+
+Style/EachWithObject:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+
+Style/SignalException:
+  EnforcedStyle: semantic
+
+Style/TernaryParentheses:
+  Enabled: false

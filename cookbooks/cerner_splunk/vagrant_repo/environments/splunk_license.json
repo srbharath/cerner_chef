@@ -1,0 +1,14 @@
+{
+  "name": "splunk_license",
+  "description": "Environment for the Splunk license master",
+  "default_attributes": {
+    "splunk": {
+      "config": {
+        "licenses": "cerner_splunk/license_secrets:licenses",
+        "license-pool": "cerner_splunk/license-vagrant",
+        "authentication": "cerner_splunk/authnz-vagrant:authn"
+      },
+      "mgmt_interface": "eth1"
+    }
+  }
+}

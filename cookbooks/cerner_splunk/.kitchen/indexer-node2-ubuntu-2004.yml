@@ -1,0 +1,9 @@
+---
+username: kitchen
+ssh_key: "/root/cookbooks/cerner_splunk/.kitchen/docker_id_rsa"
+image_id: db7ed7ee7727
+container_id: 2f8267a9e37aaab03d3009bfef746edd8d31a1b5af2c80b26685c2b13a9b6361
+hostname: localhost
+port: 32962
+last_action: converge
+last_error: 

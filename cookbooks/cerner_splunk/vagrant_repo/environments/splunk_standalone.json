@@ -1,0 +1,50 @@
+{
+  "name": "splunk_standalone",
+  "description": "Environment for the Splunk 6 Standalone server",
+  "default_attributes": {
+    "splunk": {
+      "apps": {
+        "bag": "cerner_splunk/cluster-apps-vagrant:search_head",
+        "another_awesome_app": {
+          "files": {
+            "app.conf": {
+              "ui": {
+                "is_visible": "1",
+                "label": "Another Awesome Splunk App"
+              }
+            }
+          },
+          "permissions": {
+            "": { "access": { "read": "*", "write": "*" } },
+            "viewstates": { "access": { "read": "*", "write": "*" } }
+          }
+        }
+      },
+      "logs": {
+        "splunkd": {
+          "appender.metrics.maxFileSize": "10000000",
+          "appender.metrics.maxBackupIndex": "3"
+        }
+      },
+      "config": {
+        "clusters": [
+          "cerner_splunk/cluster-vagrant-site1",
+          "cerner_splunk/cluster-standalone",
+          "cerner_splunk/cluster-vagrant",
+          "cerner_splunk/cluster-vagrant-site2"
+        ],
+        "roles": "cerner_splunk/authnz-vagrant:roles",
+        "authentication": "cerner_splunk/authnz-vagrant:authn",
+        "alerts": "cerner_splunk/alerts-vagrant:alerts",
+        "secrets": {
+          "s_standalone": "cerner_splunk/standalone_passwords:splunk.secret"
+        },
+        "admin_password": {
+          "s_standalone": "cerner_splunk/standalone_passwords:admin_password"
+        }
+      },
+      "data_bag_secret": "/vagrant/vagrant_repo/alternative_encrypted_data_bag_secret",
+      "mgmt_interface": "eth1"
+    }
+  }
+}

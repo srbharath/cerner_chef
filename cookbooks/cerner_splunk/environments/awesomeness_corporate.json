@@ -1,0 +1,12 @@
+{
+  "name": "awesomeness_corporate",
+  "description": "Node Environment for the Awesome Team Servers in Corporate",
+  "default_attributes": {
+    "splunk": {
+      "config": {
+        "clusters": ["cerner_splunk/cluster-corporate"]
+      }
+    }
+  }
+}
+

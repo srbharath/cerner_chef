@@ -1,0 +1,5 @@
+---
+username: kitchen
+ssh_key: "/root/cookbooks/cerner_splunk/.kitchen/docker_id_rsa"
+image_id: db7ed7ee7727
+last_error: Kitchen::ShellOut::ShellCommandFailed
