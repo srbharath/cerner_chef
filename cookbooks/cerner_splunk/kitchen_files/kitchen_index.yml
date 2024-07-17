@@ -1,0 +1,100 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: chef_zero
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-20.04
+
+driver_config:
+  use_sudo: false
+  # Network definition
+  networks:
+    - name: custom_network
+      driver: bridge
+
+suites:
+  - name: default
+    run_list:
+      - recipe[cerner_splunk::search_head]
+    attributes:
+      container_ip_base: "172.18.0."
+      container_ip_start: 2
+
+  - name: master
+    driver:
+      hostname: master
+    run_list:
+      - recipe[cerner_splunk::search_head]
+      #- recipe[cerner_splunk::update_databag]
+      - recipe[cerner_splunk::_configure_server]
+    driver_config:
+      network_mode: custom_network
+      forward:
+        - "8001:8000"
+        - "9004:9000"
+        - "8093:8089"
+      docker_options:
+        - "--ip=172.18.0.2"
+        - "--expose=8089"
+        - "--expose=9000"
+    
+  - name: indexer-node1-site1
+    driver:
+      hostname: indexer-1node
+    run_list:
+      - recipe[cerner_splunk::search_head]
+      - recipe[cerner_splunk::_configure_server]
+    driver_config:
+      network_mode: custom_network
+      forward:
+        - "8002:8000"
+        - "9001:9000"
+        - "8090:8089"
+      docker_options:
+        - "--ip=172.18.0.6"
+        - "--expose=8089"
+        - "--expose=9000"
+    
+
+  # - name: indexer-node2-site1
+  #   driver:
+  #     hostname: indexer-2node
+  #   run_list:
+  #     - recipe[cerner_splunk::search_head]
+  #     - recipe[cerner_splunk::_configure_server]
+  #   driver_config:
+  #     network_mode: custom_network
+  #     forward:
+  #       - "8003:8000"
+  #       - "9005:9000"
+  #       - "8094:8089"
+  #     docker_options:
+  #       - "--ip=172.18.0.10"
+  #       - "--expose=8089"
+  #       - "--expose=9000"
+   
+
+  # - name: indexer-node3-site1
+  #   driver:
+  #     hostname: indexer-3node
+  #   run_list:
+  #     - recipe[cerner_splunk::search_head]
+  #     - recipe[cerner_splunk::_configure_server]
+  #   driver_config:
+  #     network_mode: custom_network
+  #     forward:
+  #       - "8004:8000"
+  #       - "9006:9000"
+  #       - "8095:8089"
+  #     docker_options:
+  #       - "--ip=172.18.0.11"
+  #       - "--expose=8089"
+  #       - "--expose=9000"
+
+

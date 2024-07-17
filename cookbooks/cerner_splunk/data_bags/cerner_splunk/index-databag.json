@@ -1,0 +1,44 @@
+{
+  "id": "splunk_cluster_data",
+  "indexes": {
+    "config": {
+      "default": {
+        "homePath.maxDataSizeMB": 5000,
+        "coldPath.maxDataSizeMB": 10000,
+        "_maxDailyDataSizeMB": 100,
+        "_dataSizePaddingPercent": 10,
+        "frozenTimePeriodInSecs": 188697600
+      },
+      "volume:hotwarm": {
+        "path": "$SPLUNK_DB/hotwarm",
+        "maxVolumeDataSizeMB": 50000
+      },
+      "main": {
+        "homePath": "$SPLUNK_DB/main/db",
+        "coldPath": "$SPLUNK_DB/main/colddb",
+        "thawedPath": "$SPLUNK_DB/main/thaweddb"
+      },
+      "audit": {
+        "homePath": "$SPLUNK_DB/audit/db",
+        "coldPath": "$SPLUNK_DB/audit/colddb",
+        "thawedPath": "$SPLUNK_DB/audit/thaweddb"
+      }
+    },
+    "flags": {
+      "main": {
+        "noGeneratePaths": false,
+        "noRepFactor": false
+      },
+      "audit": {
+        "noGeneratePaths": false,
+        "noRepFactor": false
+      }
+    }
+  },
+  "settings": {
+    "replication_factor": 3,
+    "_cerner_splunk_indexer_count": 2
+  },
+  "admin-password": "changeme"
+}
+
